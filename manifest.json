@@ -1,0 +1,11 @@
+{
+    "name": "Taiwan Railway Re-Design",
+    "version": "0.1",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["http://railway.hinet.net/*"],
+        "css": ["style/main.css"],
+        "js": ["script/jquery.js", "script/behavior.js"],
+        "all_frames": true
+    }]
+}

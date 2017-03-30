@@ -1,0 +1,3 @@
+select[name=from_station], select[name=to_station]{
+  display: none;
+}
