@@ -4,8 +4,16 @@
     "manifest_version": 2,
     "content_scripts": [{
         "matches": ["http://railway.hinet.net/*"],
-        "css": ["style/main.css"],
-        "js": ["script/jquery.js", "script/behavior.js"],
+        "css": [
+          "vendors/jquery-ui.datapicker/jquery-ui.min.css",
+          "styles/main.css"
+        ],
+        "js": [
+            "vendors/jquery.js",
+            "vendors/jquery.replaceTag.js",
+            "vendors/jquery-ui.datapicker/jquery-ui.min.js",
+            "scripts/behavior.js"
+        ],
         "all_frames": true
     }]
 }

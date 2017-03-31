@@ -1,11 +1,3 @@
-$(function(){
-    $('select[name=from_station], select[name=to_station]').each(function(){
-      var id = 's_'+$(this).attr('id');
-      $(this).clone().attr('list', id).replaceTag('input').wrapInner( "<datalist id='"+id+"'></datalist>").insertAfter($(this));
-      $(this).remove();
-    })
-})
-
 $.extend({
     replaceTag: function (element, tagName, withDataAndEvents, deepWithDataAndEvents) {
         var newTag = $("<" + tagName + ">")[0];
